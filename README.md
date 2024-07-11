@@ -1,6 +1,6 @@
 # GOOGLE CLONE API
 
-A simple Express.js backend built with TypeScript to demonstrate full-stack development skills for alight fullstack developer challenge. 
+A simple Express.js backend built with TypeScript to demonstrate full-stack development skills for Alight-Coding-Challenge. 
 This app includes a search route that queries an external API.
 
 ## Technologies Used
@@ -55,26 +55,41 @@ This app includes a search route that queries an external API.
 
 src/: Contains the source code.
 
-controllers/: Logic for handling requests.
-searchController.ts: Handles search route logic.
-routes/: Defines application routes.
-searchRoutes.ts: Route for search functionality.
-app.ts: Initializes and configures the Express application.
-server.ts: Starts the server.
-tests/: Contains test files.
+- **controllers/:** Logic for handling requests. <br>
+    - *searchController.ts:* <br>
+        Handles search route logic.
 
-searchRoutes.test.ts: Tests for the search route.
-.env: Environment variables.
-.env.example: Helps you to know which variable to use in .env.
+- **routes/:** Defines application routes.<br>
+    - *searchRoutes.ts*: <br>
+        Route for search functionality.
 
-package.json: Project metadata and scripts.
+- **app.ts:** Initializes and configures the Express application.
+- **server.ts:** Starts the server.
+- **tests/:** Contains test files.<br>
+    - *searchRoutes.test.ts:* <br>
+        Tests for the search route.
+- **.env:** Environment variables.
+    - *.env.example:* <br> 
+        Helps you to know which variable to use in .env.
 
-tsconfig.json: TypeScript configuration.
+- **package.json:** 
+    - Project metadata and scripts.
 
-jest.config.js: Jest configuration.
+- **sconfig.json:**
+    - TypeScript configuration.
 
-Additional Features or Considerations
-CORS Configuration: CORS is configured to only accept requests from the specified frontend URL.
+**jest.config.js:** 
+    - Jest configuration.
+
+## Additional Features or Considerations 
+
+**CORS Configuration:** <br>
+*CORS is configured to only accept requests from the specified frontend URL.
 Environment Variables: Sensitive data and configurations are managed through environment variables.
 Error Handling: Basic error handling is implemented for external API calls.
-Feel free to extend this project by adding more routes, controllers, and features as needed.
+Feel free to extend this project by adding more routes, controllers, and features as needed.*
+
+**Production deployment:** <br>
+This app is deployed on <a href="https://render.com">render.com</a> a platform that allows to deployed nodejs application for free. <br>
+To access the api via postman. please visit: <a href="https://gc-api-cjwv.onrender.com">gooogle clone api</a>
+
