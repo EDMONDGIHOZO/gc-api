@@ -2,6 +2,7 @@ import express from "express";
 import dotenv from "dotenv";
 import searchRoutes from './routes/searchRoutes'
 import cors from 'cors'
+import setupSwagger from "./swagger";
 
 dotenv.config()
 
@@ -21,6 +22,7 @@ const corsOptions = {
 }
 
 app.use(cors(corsOptions))
+setupSwagger(app);
 app.use('/search', searchRoutes)
 
 export default app;
