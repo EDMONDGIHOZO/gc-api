@@ -24,7 +24,7 @@ apis: ['./src/routes/*.ts', './src/controllers/*.ts']
 const swaggerSpec = swaggerJsdoc(options);
 
 const setupSwagger = (app: Express): void => {
-  app.use('/', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+  app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 };
 
 export default setupSwagger;
