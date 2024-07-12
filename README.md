@@ -18,6 +18,8 @@ This app includes a search route that queries an external API.
 - **dotenv**: Loads environment variables from a `.env` file.
   
 - **cors**: Middleware for enabling CORS.
+- **swagger-ui-express**: Swagger UI for API documentation.
+- **swagger-jsdoc**: Swagger JSDoc for generating Swagger spec.
 
 ## Installation Instructions
 
@@ -68,24 +70,27 @@ src/: Contains the source code.
 - **tests/:** Contains test files.<br>
     - *searchRoutes.test.ts:* <br>
         Tests for the search route.
-- **.env:** Environment variables.
+- ``swagger.ts:`` Configures Swagger for API documentation.
+- ```.env:``` Environment variables.
     - *.env.example:* <br> 
         Helps you to know which variable to use in .env.
 
-- **package.json:** 
+- ``package.json:`` 
     - Project metadata and scripts.
 
-- **sconfig.json:**
+- ``sconfig.json:``
     - TypeScript configuration.
 
-**jest.config.js:** 
+    ``jest.config.js:`` 
     - Jest configuration.
 
 ## Additional Features or Considerations 
 
 **CORS Configuration:** <br>
-*CORS is configured to only accept requests from the specified frontend URL.
-Environment Variables: Sensitive data and configurations are managed through environment variables.
+- CORS is configured to only accept requests from the specified frontend URL.
+*API Documentation:* Swagger UI is available at the root URL (/) for API documentation.
+
+**Environment Variables:** Sensitive data and configurations are managed through environment variables.
 Error Handling: Basic error handling is implemented for external API calls.
 Feel free to extend this project by adding more routes, controllers, and features as needed.*
 
