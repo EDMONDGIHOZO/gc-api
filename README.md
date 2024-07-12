@@ -95,6 +95,6 @@ Error Handling: Basic error handling is implemented for external API calls.
 Feel free to extend this project by adding more routes, controllers, and features as needed.*
 
 **Production deployment:** <br>
-This app is deployed on <a href="https://render.com">render.com</a> a platform that allows to deployed nodejs application for free. <br>
-To access the api via postman. please visit: <a href="https://gc-api-cjwv.onrender.com">gooogle clone api</a>
+This app is deployed on <a href="https://render.com">render.com</a> a platform that allows to deploy nodejs application for free. <br>
+To raect api docs. please visit: <a href="https://gc-api-cjwv.onrender.com">google clone api</a>
 
